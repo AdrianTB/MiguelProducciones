@@ -175,14 +175,14 @@ $(document).ready(function () {
     }
 
     setPagination();
-    goToPage(1);
+    
 
     //event handlers
     $('.tm-gallery-link').click(function(e) {        
         var filter = $(this).data('filter');        
         currentFilter = filter;
         setPagination();
-        goToPage(1);
+        
         $('.tm-gallery-link').removeClass('active');
         $(e.target).addClass('active');
     })
@@ -191,7 +191,7 @@ $(document).ready(function () {
     $(window).resize(function(){
         itemsPerPage = defineItemsPerPage();
         setPagination();
-        goToPage(1);
+        
     });
 
     /************** Video background *********/
