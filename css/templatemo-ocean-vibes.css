@@ -53,7 +53,7 @@ div { box-sizing: border-box;}
 .tm-mb-50 { margin-bottom: 50px; }
 .tm-mb-80 { margin-bottom: 80px; }
 .tm-text-center { text-align: center; }
-.tm-text-right { text-align: right; }
+.tm-text-right { text-align: right; margin-top: 20px;}
 .tm-color-primary { color: #309AFD; }
 .tm-color-gray { color: #666768; }
 .tm-color-gray-2 { color: #98999A; }
@@ -173,7 +173,8 @@ a {
 }
 
 .tm-intro-pad {
-    padding: 40px 55px 50px; 
+    /*padding: 40px 55px 50px;  */
+     padding: 10px 55px 10px; 
 }
 
 .tm-intro-col-l {
@@ -224,8 +225,8 @@ button.mfp-arrow {
 
 /* Intro */
 .tm-intro-img {
-    max-width: 300px;
-    max-height: 600px;
+    max-width: 360px;
+    max-height: 620px;
 }
 
 /* Gallery */
@@ -240,6 +241,7 @@ button.mfp-arrow {
     margin: 0 -10px;
 	list-style: none;
     text-align: center;
+    justify-content: center;
 }
 
 .tm-paging {
@@ -649,6 +651,12 @@ address {
         flex-direction: column;
         align-items: center;
     }
+    /* .tm-gallery{
+        background-color: black;
+    } */
+    .tm-gallery {
+       text-align: center;
+    }
 }
 
 @media (max-width: 558px) {
@@ -661,3 +669,45 @@ address {
         margin-left: 30px;
     }
 }
+
+
+
+
+
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+  

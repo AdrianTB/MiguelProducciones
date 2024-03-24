@@ -262,11 +262,35 @@ $(document).ready(function () {
         var img = 'img/';
 
         if(window.innerWidth > 650) {
-            img += 'intro.jpg';
+            img += 'Galery-BlancaDuran/intro_redi.jpg';
         } else {
-            img += 'intro-big.jpg';
+            img += 'Galery-BlancaDuran/intro_redi.jpg';
         }
 
         $('.tm-intro-img').attr('src', img);
     }
+
+
+/************** Carrusel de Imágenes **************/
+const carousel = $('.carousel');
+        const slides = $('.carousel-item');
+        const totalSlides = slides.length;
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.removeClass('active');
+            slides.eq(index).addClass('active');
+        }
+
+        $('.prev').on('click', function() {
+            currentSlide = (currentSlide === 0) ? totalSlides - 1 : currentSlide - 1;
+            showSlide(currentSlide);
+        });
+
+        $('.next').on('click', function() {
+            currentSlide = (currentSlide === totalSlides - 1) ? 0 : currentSlide + 1;
+            showSlide(currentSlide);
+        });
 });
+
+
