@@ -262,9 +262,9 @@ $(document).ready(function () {
         var img = 'img/';
 
         if(window.innerWidth > 650) {
-            img += 'Galery-BlancaDuran/intro_redi.jpg';
+            img += 'Galeria/intro_redi.jpg';
         } else {
-            img += 'Galery-BlancaDuran/intro_redi.jpg';
+            img += 'Galeria/intro_redi.jpg';
         }
 
         $('.tm-intro-img').attr('src', img);
